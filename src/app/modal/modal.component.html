@@ -1,0 +1,12 @@
+<div id="modal-content-wrapper">
+  <header id="modal-header">
+    <h1 id="modal-title">Update Todo</h1>
+  </header>
+  <section id="modal-body">
+    <input class="add-Input" required [(ngModel)]="this.data.title" name="title"/>
+  </section>
+  <footer id="modal-footer">
+    <button mat-raised-button id="modal-action-button" (click)="actionFunction()">Update</button>
+    <button mat-raised-button id="modal-cancel-button" (click)="closeModal()">Go back</button>
+  </footer>
+</div>
